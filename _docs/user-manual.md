@@ -39,11 +39,11 @@ Get started with {{ page.APP_TITLE }} by using this quickstart guide. This topic
 
 1. From the home page of {{ page.APP_TITLE }}, click "Get started with {{ page.APP_TITLE }}"
 
-   ![](/assets/img/user-manual/sign-up-1.png)
+   ![]({{ "/assets/img/user-manual/sign-up-1.png" | relative_url }})
 
 2. Click "SIGN IN" to sign up or sign in.
 
-   ![](/assets/img/user-manual/sign-up-2.png)
+   ![]({{ "/assets/img/user-manual/sign-up-2.png" | relative_url }})
 
 ```
 Note:
@@ -63,7 +63,7 @@ By signing up with {{ page.APP_TITLE }}, you indicate that you agree with {{ pag
 
 1. Sign in with your approved {{ page.APP_TITLE }} account. If you do not have an account yet, please refer to SignUp/SignIn Instructions.
 
-   ![](/assets/img/user-manual//configure-1.png)
+   ![]({{ "/assets/img/user-manual/configure-1.png" | relative_url }})
 
 2. Name your project by filling in the "PROJECT NAME" field.
 
@@ -71,7 +71,7 @@ By signing up with {{ page.APP_TITLE }}, you indicate that you agree with {{ pag
 
 4. Click "NEXT" to invoke connectivity check.
 
-   ![](/assets/img/user-manual/configure-2.png)
+   ![]({{ "/assets/img/user-manual/configure-2.png" | relative_url }})
 
 5. In "JAVA ARCHIVE URL", please provide the full URL of the target service deployment that corresponds to the JAVA ARCHIVE package configured in the previous step.
 
@@ -100,31 +100,31 @@ Note: Pay special attention to the following items if connectivity check did not
 
 7. Once the connectivity check has passed, the "NEXT" button will be clickable to move to the next step.
 
-   ![](/assets/img/user-manual/configure-3.png)
+   ![]({{ "/assets/img/user-manual/configure-3.png" | relative_url }})
 
 8. Now the user can verify proper ownership of the target service URL
 
    a. Create a file named zast.txt with the content displayed. Ownership verfication needs to be completed within 3 hours before this content expires.
 
-   ![](/assets/img/user-manual/configure-4.png)
+   ![]({{ "/assets/img/user-manual/configure-4.png" | relative_url }})
 
    b. Save the zast.txt to the root directory of domain of target service URL. For example, if your target service URL is https://foo.com/bar , please make sure to copy zast.txt to the root directory to host https://foo.com/.well-known/zast.txt
 
    c. Verify and ensure in a browser that %rootURL%/.well-known/zast.txt is accessible and can display proper content, i.e., https://foo.com/.well-known/zast.txt can be accessed in a web browser.
 
-   ![](/assets/img/user-manual/configure-5.png)
+   ![]({{ "/assets/img/user-manual/configure-5.png" | relative_url }})
 
    d. If you skip the above steps b&c, you might see the following error prompt. In that case, conduct the above steps b&c till success.
 
-   ![](/assets/img/user-manual/configure-6.png)
+   ![]({{ "/assets/img/user-manual/configure-6.png" | relative_url }})
 
 9. Now ownership verification will succeed. You can click "NEXT" to the next step.
 
-   ![](/assets/img/user-manual/configure-7.png)
+   ![]({{ "/assets/img/user-manual/configure-7.png" | relative_url }})
 
 10. Optional step: the users also upload extra frontend/backend source code that has been involved in the project in format of .zip or .rar. Click "NEXT" after this step is complete.
 
-    ![](/assets/img/user-manual/configure-8.png)
+    ![]({{ "/assets/img/user-manual/configure-8.png" | relative_url }})
 
 ## Prepare a code scan job
 
@@ -136,22 +136,22 @@ Note: Pay special attention to the following items if connectivity check did not
 
    a. If extension has not been installed or out of date, {{ page.EXTENSION_NAME }} Chrome extension needs to be installed first.
 
-   ![](/assets/img/user-manual/prepare-1.png)
+   ![]({{ "/assets/img/user-manual/prepare-1.png" | relative_url }})
 
    b. Click the "install", the installation page of {{ page.EXTENSION_NAME }} from Chrome web store will open. Click the "Add to Chrome" button to install the extension.
 
-   ![](/assets/img/user-manual/prepare-2.png)
+   ![]({{ "/assets/img/user-manual/prepare-2.png" | relative_url }})
 
    c. Click "Add extension", the {{ page.EXTENSION_NAME }} Chrome extension will be installed.
-   ![](/assets/img/user-manual/prepare-3.png)
+   ![]({{ "/assets/img/user-manual/prepare-3.png" | relative_url }})
 
    d. Click the extension icon in the Chrome browser following by clicking on "{{ page.EXTENSION_NAME }}". This opens the User Guideline of the {{ page.EXTENSION_NAME }} Chrome extension.
 
-   ![](/assets/img/user-manual/prepare-4.png)
+   ![]({{ "/assets/img/user-manual/prepare-4.png" | relative_url }})
 
    e. Follow those instructions to finish the configuration for {{ page.EXTENSION_NAME }} extension and create test accounts.
 
-   ![](/assets/img/user-manual/prepare-5.png)
+   ![]({{ "/assets/img/user-manual/prepare-5.png" | relative_url }})
 
 ## Submit a code scan job
 
@@ -163,13 +163,13 @@ Note: Pay special attention to the following items if connectivity check did not
 
 3. Click SCAN to submit a code scan job
 
-   ![](/assets/img/user-manual/submit-1.png)
+   ![]({{ "/assets/img/user-manual/submit-1.png" | relative_url }})
 
 ## Manage submitted code scan jobs
 
 CODE SCAN page lists all submitted code scan jobs
 
-![](/assets/img/user-manual/manage-1.png)
+![]({{ "/assets/img/user-manual/manage-1.png" | relative_url }})
 
 ## Search project
 
@@ -187,7 +187,7 @@ Click the trashcan icon to delete that code scan job.
 
 Provide a short description summarizing what users can accomplish after reading this procedure.
 
-![](/assets/img/user-manual/report-1.png)
+![]({{ "/assets/img/user-manual/report-1.png" | relative_url }})
 
 ## View report
 
@@ -199,18 +199,18 @@ Click the "VIEW" button for finished code scan job to view the report of that jo
 
 2. Click "BUY" to purchase the selected vulnerabilities.
 
-![](/assets/img/user-manual/purchase-1.png)
+![]({{ "/assets/img/user-manual/purchase-1.png" | relative_url }})
 
 3. Make payment
 
-![](/assets/img/user-manual/purchase-2.png)
+![]({{ "/assets/img/user-manual/purchase-2.png" | relative_url }})
 
 ## View vulnerability details
 
 1. Go back to the report for a code scan job and click "VIEW" for any purchased vulnerability
 
-![](/assets/img/user-manual/detail-1.png)
+![]({{ "/assets/img/user-manual/detail-1.png" | relative_url }})
 
 2. Details of the finding will be displayed:
 
-![](/assets/img/user-manual/detail-2.png)
+![]({{ "/assets/img/user-manual/detail-2.png" | relative_url }})
