@@ -1,22 +1,22 @@
 <a href="https://github.com/features/codespaces" target="_blank">GitHub Codespaces</a> is a tool highly praised by developers, offering a cloud-driven development environment suitable for any activity, whether it’s a long-term project or a short-term task like reviewing pull requests. Operators can use these environments from either Visual Studio Code or a web-based editor. With it, we can quickly start a project and set up an environment, saving significant time and costs associated with preparing machines, setting up environments, configuring domains, etc.
 
-![]({{'/assets/img/ZastxCodespace/codespace.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/codespace.PNG' | relative_url }})
 
 Today, we are going to illustrate how to use GitHub Codespaces to build projects online, compiling Java archive files and packaging into a Java archive file (war/jar), and submit the archive file to zast.ai for vulnerability scanning.
 
 ## Step 1 
 Log in to GitHub account and locate the corresponding project. Currently, since zast.ai focuses security vulnerabilities in Java-based web applications for now, we have prepared a Java web project as an example.
 
-![]({{'/assets/img/ZastxCodespace/playground.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/playground.PNG' | relative_url }})
 
 Click the green "Code" button, and the pop-up window will display two tabs: Local and Codespaces. Switch to the Codespaces tab. If you have never created a Codespace before, select "Create Codespace on main."
 
-![]({{'/assets/img/ZastxCodespace/playground-code.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/playground-code.PNG' | relative_url }})
 
 
 GitHub will then start creating the Codespace, which is a quick process, taking only a few seconds.
 
-![]({{'/assets/img/ZastxCodespace/codespace-setup.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/codespace-setup.PNG' | relative_url }})
 
 Once created, we’ll see the project directory on the left side. Confirm that the project contains a pom.xml file; if it doesn't, the compilation will fail.
 
@@ -25,11 +25,11 @@ Now we can start building the project in the cloud on Codespace. From the "menu,
 
 *mvn clean package -DskipTests*
 
-![]({{'/assets/img/ZastxCodespace/mvn-clean-package.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/mvn-clean-package.PNG' | relative_url }})
 
 After hitting Enter, the program will start running automatically. Once it finishes, you will see a "Build Success" prompt in the terminal window, and a new target folder will be created in the file directory. Open this folder to find the built Java files.
 
-![]({{'/assets/img/ZastxCodespace/build-success.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/build-success.PNG' | relative_url }})
 
 ## Step 3 
 Next, we will compile and package the project into an archive filethe project into a Java archive file so that we can upload it to zast.ai for vulnerability scanning. In the terminal, type the following command:
