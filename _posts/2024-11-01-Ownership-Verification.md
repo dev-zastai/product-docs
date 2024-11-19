@@ -1,5 +1,5 @@
 <font size="+12"><center>
-VerifyingZast.ai Website Ownership Verification
+Verifying Zast.ai Website Ownership Verification
 
 </center></font>
 
