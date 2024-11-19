@@ -2,7 +2,7 @@ A few days ago, a client submitted a vulnerability assessment, and the results w
 ## 1. Vulnerability Assessed by zast.ai - Command Injection
 Let's see the 1st vulnerability report:
 
-![]({{'/assets/img/Bandaid/1-taint-sink.png' | relative_url }})
+![]({{'/assets/img/Bandaid/1ts.png' | relative_url }})
 
 ![]({{'/assets/img/Bandaid/report-1-taint-source.png' | relative_url }})
 
@@ -23,7 +23,7 @@ After implementing the first patch, the team submitted for reassessment. Now, le
 ## 2. 1st Patch - Base64 Encoding
 See below for the second report:
 
-![]({{'/assets/img/Bandaid/2-taint-sink.png' | relative_url }})
+![]({{'/assets/img/Bandaid/2ts.png' | relative_url }})
 
 ![]({{'/assets/img/Bandaid/report-2-taint-source.png' | relative_url }})
 
@@ -38,7 +38,7 @@ When receiving the report, the security team leader told our consultant: "I'm im
 ## 3. 2nd Patch - Prefix Matching
 Let's see how zast.ai works this time:
 
-![]({{'/assets/img/Bandaid/3-taint-sink.png' | relative_url }})
+![]({{'/assets/img/Bandaid/3ts.png' | relative_url }})
 
 ![]({{'/assets/img/Bandaid/report-3-taint-source.png' | relative_url }})
 
