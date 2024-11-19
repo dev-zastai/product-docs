@@ -1,5 +1,5 @@
 ---
-title: "Zast.ai: Pioneering AI-Powered Web Security"
+title: "Zast.ai: Zero-day Hunting with AI"
 tags: [zast.ai, web security, AI, zero-day vulnerabilities, cybersecurity]
 ---
 
