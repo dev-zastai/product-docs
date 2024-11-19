@@ -2,15 +2,13 @@ A few days ago, a client submitted a vulnerability assessment, and the results w
 ## 1. Vulnerability Assessed by zast.ai - Command Injection
 Let's see the 1st vulnerability report:
 
-![]({{'/assets/img/FakeFixes/1.png' | relative_url }})
+![]({{'/assets/img/Bandaid/report-1-taint-sink.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-1-taint-source.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-1-POC.png' | relative_url }})
 
 <u>The taint source and taint sink are identified, along with a POC that shows a malicious payload executing a shell command</u>. 
-
-![]({{'/assets/img/FakeFixes/report1-taint-sink.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report1-taint-source.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report1-POC.png' | relative_url }})
 
 Our client discussed the report after reviewing it:
 
@@ -19,41 +17,36 @@ Our client discussed the report after reviewing it:
 "What if we add Base64 encoding to the input? That might help obscure it and prevent exploitation."
 
 "Let’s try that and resubmit it to zast.ai for testing."
+
 After implementing the first patch, the team submitted for reassessment. Now, let's see what happens next.
 
 ## 2. 1st Patch - Base64 Encoding
 See below for the second report:
 
-![]({{'/assets/img/FakeFixes/2.png' | relative_url }})
+![]({{'/assets/img/Bandaid/report-2-taint-sink.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-2-taint-source.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-2-POC.png' | relative_url }})
 
 <u>The taint source remained the same in both reports, indicating that the vulnerability was unchanged. In the taint sink, it shows that Base64 encoding is applied.</u>
 
 <u>The POC indicates a request with an encoded shell command that bypasses superficial checks. Despite the encoding, the application processes the input without proper validation, allowing the command to execute.</u>
 
-![]({{'/assets/img/FakeFixes/report2-taint-sink.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report2-taint-source.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report2-POC.png' | relative_url }})
-
-When receiving the report, the security team leader told our consultant: "I'm impressed that zast.ai cracked the Base64 encoding. But, I’m confident I can write code that zast won't be able to exploit. Let me try something different." 
-
-And they made the third assessment without revealing any details about the second patch.
+When receiving the report, the security team leader told our consultant: "I'm impressed that zast.ai cracked the Base64 encoding. But, I’m confident I can write code that zast won't be able to exploit. Let me try something different." And they reassessed the application without revealing any details about the second patch.
 
 ## 3. 2nd Patch - Prefix Matching
 Let's see how zast.ai works this time:
 
-![]({{'/assets/img/FakeFixes/3.png' | relative_url }})
+![]({{'/assets/img/Bandaid/report-3-taint-sink.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-3-taint-source.png' | relative_url }})
+
+![]({{'/assets/img/Bandaid/report-3-POC.png' | relative_url }})
 
 <u>The taint source stays the same, so the vulnerability wasn't fixed. In the taint sink, the code implemented a prefix validation for the Base64-decoded command, allowing execution only if the command starts with "secret." It reduces command injection risks by validating the input and using substring(6) to remove the prefix, ensuring only specific commands execute.</u>
 
 <u>Again, the POC validate the command injection vulnerability by sending a Base64-encoded shell command with a prefix match to a specified URL. By combining the prefix "secret" with the command, it tests whether the server is susceptible to remote code execution. Additionally, it uses HTTP headers to mimic legitimate requests, revealing potential security weaknesses in the application's input handling.</u>
-
-![]({{'/assets/img/FakeFixes/report3-taint-sink.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report3-taint-source.png' | relative_url }})
-
-![]({{'/assets/img/FakeFixes/report3-POC.png' | relative_url }})    
 
 The client came to us and shared their feedback.
 

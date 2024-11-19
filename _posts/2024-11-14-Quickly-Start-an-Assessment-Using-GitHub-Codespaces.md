@@ -58,18 +58,18 @@ Next, go back to Codespaces, find the target folder, and download the archive fi
 
 ## Step 4
 Now, let’s explain how to submit and scan this Java project on zast.ai. First, visit zast.ai and register for an account. Currently, new account holders need to apply to join a waitlist for activation. Please ensure you provide thorough information on the waitlist application page to expedite your early access.
-Before submitting the project for a scan, there are five steps: uploading the Java archive file, performing connectivity checks, ownership verification, uploading source code, and adding test accounts. Here’s a detailed description of each step.
+Before submitting the project for a scan, there are five steps: uploading the Java archive file, performing connectivity checks, <a href="https://zast-ai.github.io/blog/Ownership-Verification/">ownership verifying</a>, uploading source code, and adding test accounts. Here’s a detailed description of each step.
 * First, give the project a name, choose the Java archive file downloaded from Codespace, then proceed to the next step for connectivity check.
 
 ![]({{'/assets/img/ZastxCodespace/upload-jar.png' | relative_url }})
 
-* On the connectivity check page, we need to enter the URL of the target service. This URL is the one we mentioned in step 3, so paste it directly and then perform the connectivity check. Once finished, click the next step to enter the ownership verification. 
+* On the connectivity check page, we need to enter the URL of the target service. This URL is the one we mentioned in step 3, so paste it directly and then perform the connectivity check. Once finished, click the next step to enter the <a href="https://zast-ai.github.io/blog/Ownership-Verification/">ownership verifying</a>. 
 
 ![]({{'/assets/img/ZastxCodespace/connectivity.png' | relative_url }})
 
 ![]({{'/assets/img/ZastxCodespace/connectivity-check.png' | relative_url }})
 
-* In the ownership verifying step, the page provides detailed instructions. First, we need to manually add the HTTP challenge source and then copy the hash value provided on the page. Go back to Codespace, find the zast.txt document, and paste the hash value there. (If you haven't created one before, you need to create a new one.) 
+* In the <a href="https://zast-ai.github.io/blog/Ownership-Verification/">ownership verifying</a> step, the page provides detailed instructions. First, we need to manually add the HTTP challenge source and then copy the hash value provided on the page. Go back to Codespace, find the zast.txt document, and paste the hash value there. (If you haven't created one before, you need to create a new one.) 
 
 ![]({{'/assets/img/ZastxCodespace/hash.png' | relative_url }})
 
