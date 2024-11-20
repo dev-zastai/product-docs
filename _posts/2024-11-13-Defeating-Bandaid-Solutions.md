@@ -60,13 +60,10 @@ The client came to us and shared their feedback.
 
 "It really sets a new standard for vulnerability detection. I can’t help but wonder how we ever managed without it!"
 
-We're pleased to receive this feedback from our client, but this is exactly how zast.ai works, just as we expected. Afterwards, we also provided some suggestions for fixing the vulnerability.
+We're pleased to receive this feedback from our client. It alighs perfectly with how we expected <a href="https://zast.ai" target="_blank">zast.ai</a> to perform. Afterwards, we also provided some suggestions for fixing the vulnerability.
 
 ## 4. Zast.ai's Edge in Vulnerability Assessment
-From this case, we can see that after two patches, the vulnerability has become much harder to spot. Yet, zast.ai was able to uncover and confirm it using its advanced large language model. Like our client said, zast.ai truly stands out from traditional methods like black-box and white-box testing. 
+From this case, we can see that after two patches, the vulnerability became much harder to detect (or identify). However, <a href="https://zast.ai" target="_blank">zast.ai</a> was able to uncover and confirm it thanks to its advanced large language model. As our client mentioned, <a href="https://zast.ai" target="_blank">zast.ai</a> truly stands out compared to traditional methods like black-box and white-box testing. 
 
-While black-box testing examines the system from an external perspective and relies on input/output, it often suffers from limited coverage, as it only tests predefined scenarios based on expected inputs. This approach can overlook vulnerabilities that occur under unexpected conditions or rare input combinations, making it less effective in identifying complex security flaws. In contrast, white-box testing inspects the internal workings of the code, providing a more thorough analysis but requiring extensive knowledge of the system architecture.
-
-Zast.ai, on the other hand, employs smart analysis of taint sinks to accurately locate taint sources, it then leverages its LLM to generate POC exploits and verify their correctness.
 
 Visit zasta.ai now to try it and keep your systems secure! We also expect to hear your examples of vulnerability cases and remediation strategies. Join us in the conversation and let's collaborate on advancing research and best practices for vulnerability identification and prevention together!

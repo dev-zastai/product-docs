@@ -2,10 +2,10 @@
 
 ![]({{'/assets/img/ZastxCodespace/codespace.PNG' | relative_url }})
 
-Today, we are going to illustrate how to use GitHub Codespaces to build projects online, compiling Java archive files and packaging into a Java archive file (war/jar), and submit the archive file to zast.ai for vulnerability scanning.
+Today, we will demonstrate how to use GitHub Codespaces to build projects online, compile Java archive files, package them into a Java archive file (WAR/JAR), and submit the archive file to <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability assessment.
 
 ## Step 1 
-Log in to GitHub account and locate the corresponding project. Currently, since zast.ai focuses security vulnerabilities in Java-based web applications for now, we have prepared a Java web project as an example.
+Log in to your GitHub account and locate the corresponding project. Currently, since <a href="https://zast.ai" target="_blank">zast.ai</a> focuses on security vulnerabilities in Java-based web applications, we have prepared a Java web project as an example.
 
 ![]({{'/assets/img/ZastxCodespace/playground.PNG' | relative_url }})
 
@@ -32,7 +32,7 @@ After hitting Enter, the program will start running automatically. Once it finis
 ![]({{'/assets/img/ZastxCodespace/build-success.PNG' | relative_url }})
 
 ## Step 3 
-Next, we will compile and package the project into an archive filethe project into a Java archive file so that we can upload it to zast.ai for vulnerability scanning. In the terminal, type the following command:
+Next, we will compile and package the project into a Java archive file so that we can upload it to <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability scanning. In the terminal, type the following command:
 
 *java -jar target/simple-login-app-0.0.2-SNAPSHOT.jar*
 
@@ -44,7 +44,7 @@ Once the run is completed, we will usually see a prompt in the bottom right corn
 
 ![]({{'/assets/img/ZastxCodespace/public.png' | relative_url }})
 
-In addition, on the right of the "Terminal" tab, there’s a "Ports" tab with a notification bubble saying "1." Click it, and we will see a network icon next to the address displaying “Open in Browser.” Click it to open.
+In addition, on the right side of the "Terminal" tab, there’s a "Ports" tab with a notification bubble saying "1." Click it, and we will see a network icon next to the address displaying “Open in Browser.” Click it to open.
 
 ![]({{'/assets/img/ZastxCodespace/open-in-browser.png' | relative_url }})
 
