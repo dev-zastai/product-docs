@@ -58,40 +58,41 @@ Next, go back to Codespaces, find the target folder, and download the archive fi
 
 ## Step 4
 Now, let’s explain how to submit and scan this Java project on zast.ai. First, visit zast.ai and register for an account. Currently, new account holders need to apply to join a waitlist for activation. Please ensure you provide thorough information on the waitlist application page to expedite your early access.
-Before submitting the project for a scan, there are five steps: uploading the Java archive file, performing connectivity checks, <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a>, uploading source code, and adding test accounts. Here’s a detailed description of each step.
-* First, give the project a name, choose the Java archive file downloaded from Codespace, then proceed to the next step for connectivity check.
+
+There are five steps: uploading the Java archive file, performing connectivity checks, <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a>, uploading source code, and adding test accounts. Here’s a detailed description of each step.
+* Firstly, give the project a name, choose the Java archive file downloaded from Codespace, then proceed to the next step for connectivity check.
 
 ![]({{'/assets/img/ZastxCodespace/upload-jar.png' | relative_url }})
 
-* On the connectivity check page, we need to enter the URL of the target service. This URL is the one we mentioned in step 3, so paste it directly and then perform the connectivity check. Once finished, click the next step to enter the <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a>. 
+* Secondly, enter the target service url mentioned in step 3 to perform the connectivity check. 
 
 ![]({{'/assets/img/ZastxCodespace/connectivity.png' | relative_url }})
 
 ![]({{'/assets/img/ZastxCodespace/connectivity-check.png' | relative_url }})
 
-* In the <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a> step, the page provides detailed instructions. First, we need to manually add the HTTP challenge source and then copy the hash value provided on the page. Go back to Codespace, find the zast.txt document, and paste the hash value there. (If you haven't created one before, you need to create a new one.) 
+* In the <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a> phase, follow the detailed instructions to finish adding HTTP challenge source, copy the hash value provided on the page. Go back to Codespace, find the zast.txt document, and paste in it. (If you haven't created one before, you need to create a new one.) 
 
 ![]({{'/assets/img/ZastxCodespace/hash.png' | relative_url }})
 
 ![]({{'/assets/img/ZastxCodespace/zast-txt.png' | relative_url }})
 
-* After completing the ownership verification, proceed to upload the source code.  zast.ai does not mandate that the actual source code be uploaded. However, the availability of source code will improve the precision of the scan result, e.g., the line numbers for each frame of the vulnerability call flows.
+* Then we proceed to upload the source code. Zast.ai does not mandate that the actual source code be uploaded. However, the availability of source code will improve the precision of the scan result, e.g., the line numbers for each frame of the vulnerability call flows.
 
 ![]({{'/assets/img/ZastxCodespace/source-code.jpg' | relative_url }})
 
-* After uploading the source code, move on to the step of adding test accounts. Before this, enter the login URL, which is the same as the one filled in the second step for the connectivity check.
+* Next step is adding and verifying test accounts, enter the login URL which is the same as the one filled in the connectivity check.
 
 ![]({{'/assets/img/ZastxCodespace/login-url.jpg' | relative_url }})
 
-Click the next step, the system will connect to the login URL and provide a snapshot of the page for quick verification. Confirm it and click the next step to start adding test accounts.
+The system will connect to it and provide a snapshot of the page for quick verification. Confirm it and click the "Next" to start adding test accounts.
 
 ![]({{'/assets/img/ZastxCodespace/snapshot.jpg' | relative_url }})
 
-Before starting to add test accounts, remember to download the Google extension zast.ai AI Helper and enable it in incognito mode.
+In this step, please remember to download the Google extension zast.ai Helper and enable it in incognito mode if it's your first time using zast.ai.
 
 ![]({{'/assets/img/ZastxCodespace/verify-account.jpg' | relative_url }})
 
-Once the verification begins, an incognito window will pop up displaying the previously configured Codespace page. After clicking "Continue," you will need to log in to the corresponding role account.
+Once the verification begins, an incognito window will pop up displaying the previously configured Codespace page. We will need to log in to the corresponding role account.
 
 ![]({{'/assets/img/ZastxCodespace/incognito.png' | relative_url }})
 
@@ -111,15 +112,15 @@ When the account verification is complete, return to the zast page, where we wil
 
 ![]({{'/assets/img/ZastxCodespace/add-accounts.jpg' | relative_url }})
 
-After all accounts are added, click the next step. The system will ask if there are any other login URLs that need to be added. If you have multiple login URLs to scan, just repeat the above procedure; since we only have this one url this time, select "No" and move to the next step.
+After that, the system will ask if there are any other login URLs that need to be added. If we have multiple ones to scan, just repeat the above procedure; since we only have this one url here, select "No" and move to the next step.
 
 ![]({{'/assets/img/ZastxCodespace/multiple-url.jpg' | relative_url }})
 
-Before officially starting the scan, the system will present an overview of this scan, including the content we submitted. After confirming everything is correct, tick the box for the service terms and privacy policy, and then we can start the scan!
+The system will present an overview of this scan, including the content we submitted. After confirming, tick the box for the service terms and privacy policy, and then we can start the scan!
 
 ![]({{'/assets/img/ZastxCodespace/overview.jpg' | relative_url }})
 
-Scanning time will depend on the size of the submitted project, typically taking a few hours. The system will notify we via email once the scan is complete, so keep an eye on inbox.
+Scanning time depends on the size of the submitted project, typically taking a few hours. The system will notify us via email once the scan is complete, so keep an eye on inbox.
 
 ![]({{'/assets/img/ZastxCodespace/report.png' | relative_url }})
 
