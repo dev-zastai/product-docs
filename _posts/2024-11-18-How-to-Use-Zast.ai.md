@@ -44,7 +44,7 @@ In this step, please remember to download the Google extension zast.ai Helper an
 
 Once the verification begins, an incognito window will pop up displaying the previously configured page. We will need to log in to the corresponding role account.
 
-![]({{'/assets/img/ZastxCodespace/incognito.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/incognito.png' | relative_url }})
 
 ![]({{'/assets/img/ZastxCodespace/login-account.png' | relative_url }})
 
