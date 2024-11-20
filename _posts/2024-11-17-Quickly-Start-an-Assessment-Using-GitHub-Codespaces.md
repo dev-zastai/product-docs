@@ -68,11 +68,11 @@ There are five steps: uploading the Java archive file, performing connectivity c
 
 ![]({{'/assets/img/ZastxCodespace/connectivity.png' | relative_url }})
 
-![]({{'/assets/img/ZastxCodespace/connectivity-check.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/connectivity-check.jpg' | relative_url }})
 
 * In the <a href="https://zast-ai.github.io/blog/Ownership-Verification/" target="_blank">ownership verifying</a> phase, follow the detailed instructions to finish adding HTTP challenge source, copy the hash value provided on the page. Go back to Codespace, find the zast.txt document, and paste in it. (If you haven't created one before, you need to create a new one.) 
 
-![]({{'/assets/img/ZastxCodespace/hash.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/hash.jpg' | relative_url }})
 
 ![]({{'/assets/img/ZastxCodespace/zast-txt.png' | relative_url }})
 
