@@ -1,4 +1,4 @@
-A few days ago, a client submitted a vulnerability assessment, and the results were quite interesting. With their permission, we are sharing this case with you. In this case study, we will show how zast is able to detect command injection vulnerability even sophisticated variants. 
+A few days ago, a client was playing with <a href="https://zast.ai" target="_blank">http://zast.ai</a> and shared an interesting case with us. With their permission, we are excited to share it with you. In this case study, we will show how zast is able to detect command injection vulnerability even sophisticated variants. 
 ## 1. Vulnerability Assessed by zast.ai - Command Injection
 Let's see the 1st vulnerability report:
 
@@ -10,15 +10,7 @@ Let's see the 1st vulnerability report:
 
 <u>The taint source and taint sink are identified, along with a POC that shows a malicious payload executing a shell command</u>. 
 
-Our client discussed the report after reviewing it:
-
-"Zast.ai reported a critical vulnerability, we must address it immediately."
-
-"What if we add Base64 encoding to the input? That might help obscure it and prevent exploitation."
-
-"Let’s try that and resubmit it to zast.ai for testing."
-
-After implementing the first patch, the team submitted for reassessment. Now, let's see what happens next.
+To test zast.ai’s abilities, they chose to add Base64 encoding instead of fully fixing the vulnerability. They then resubmitted the updated version for evaluation. Let’s see what happens next.
 
 ## 2. 1st Patch - Base64 Encoding
 See below for the second report:
@@ -33,7 +25,7 @@ See below for the second report:
 
 <u>The POC indicates a request with an encoded shell command that bypasses superficial checks. Despite the encoding, the application processes the input without proper validation, allowing the command to execute.</u>
 
-When receiving the report, the security team leader told our consultant: "I'm impressed that zast.ai cracked the Base64 encoding. But, I’m confident I can write code that zast won't be able to exploit. Let me try something different." And they reassessed the application without revealing any details about the second patch.
+The results caught their interest, and they were a bit amazed by zast.ai’s dynamic assessment capabilities. Our client decided to try another method of obscurity to make detection nearly impossible and then ran the assessment again.
 
 ## 3. 2nd Patch - Prefix Matching
 Let's see how zast.ai works this time:
