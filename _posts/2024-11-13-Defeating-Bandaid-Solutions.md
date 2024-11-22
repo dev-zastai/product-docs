@@ -10,7 +10,7 @@ Let's see the 1st vulnerability report:
 
 <u>The taint source and taint sink are identified, along with a POC that shows a malicious payload executing a shell command</u>. 
 
-To test zast.ai’s abilities, they chose to add Base64 encoding instead of fully fixing the vulnerability. They then resubmitted the updated version for evaluation. Let’s see what happens next.
+To test <a href="https://zast.ai" target="_blank">zast.ai</a>’s abilities, the client chose to add Base64 encoding instead of fully fixing the vulnerability. They then resubmitted the updated version for evaluation. Let’s see what happens next.
 
 ## 2. 1st Patch - Base64 Encoding
 See below for the second report:
@@ -25,7 +25,7 @@ See below for the second report:
 
 <u>The POC indicates a request with an encoded shell command that bypasses superficial checks. Despite the encoding, the application processes the input without proper validation, allowing the command to execute.</u>
 
-The results caught their interest, and they were a bit amazed by zast.ai’s dynamic assessment capabilities. Our client decided to try another method of obscurity to make detection nearly impossible and then ran the assessment again.
+The results caught their interest, and the client were somewhat amazed by <a href="https://zast.ai" target="_blank">zast.ai</a>’s dynamic assess capabilities. They chose to try another method of obscurity to make detection nearly impossible—at least, that’s what they believed—and then ran the assessment again.
 
 ## 3. 2nd Patch - Prefix Matching
 Let's see how zast.ai works this time:
