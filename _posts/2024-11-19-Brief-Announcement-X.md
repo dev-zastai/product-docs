@@ -9,7 +9,7 @@ Introducing Zast.ai, the world's first fully autonomous AI agent that discovers 
 
 Unlike traditional penetration testing tools that overwhelm you with false positives, Zast.ai delivers a fully-automated, end-to-end solution. Our AI-powered virtual security expert agents:
 
-- 🔍 Scan and analyze code
+- 🔍 Audit and assess code
 - 🔓 Explore and identify vulnerability candidates
 - ✅ Verify each vulnerability with a Proof of Concept (POC)
   This ensures that every vulnerability in your report is 100% real—no false positives and no waste of time.

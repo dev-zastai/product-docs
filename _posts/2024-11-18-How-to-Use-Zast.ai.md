@@ -25,7 +25,7 @@ In the ownership verifying phase, follow the detailed instructions to finish add
 ![]({{'/assets/img/ZastxCodespace/hash.jpg' | relative_url }})
 
 ## Step 4: 
-Then we can proceed to upload the source code.  <a href="https://zast.ai" target="_blank">Zast.ai</a> does not mandate that the actual source code be uploaded. However, the availability of source code will improve the precision of the scan result, e.g., the line numbers for each frame of the vulnerability call flows.
+Then we can proceed to upload the source code.  <a href="https://zast.ai" target="_blank">Zast.ai</a> does not mandate that the actual source code be uploaded. However, the availability of source code will improve the precision of the assessment result, e.g., the line numbers for each frame of the vulnerability call flows.
 
 ![]({{'/assets/img/ZastxCodespace/source-code.jpg' | relative_url }})
 
@@ -62,18 +62,18 @@ When the account verification is complete, return to the zast page, where we wil
 
 ![]({{'/assets/img/ZastxCodespace/add-accounts.jpg' | relative_url }})
 
-After that, the system will ask if there are any other login URLs that need to be added. If we have multiple login URLs to scan, just repeat the above procedure; since we only have one url this time, select "No" and move to the next step.
+After that, the system will ask if there are any other login URLs that need to be added. If we have multiple login URLs to assess, just repeat the above procedure; since we only have one url this time, select "No" and move to the next step.
 
 ![]({{'/assets/img/ZastxCodespace/multiple-url.jpg' | relative_url }})
 
 ## Process Completed
 
-The system will then present an overview of this scan, including the content we submitted. After confirming everything is correct, tick the box for the service terms and privacy policy, and then we can start the scan!
+The system will then present an overview of this assessment, including the content we submitted. After confirming everything is correct, tick the box for the service terms and privacy policy, and then we can start the assessment!
 
 ![]({{'/assets/img/ZastxCodespace/overview.jpg' | relative_url }})
 
-Scanning time will depend on the size of the submitted project, typically taking a few hours. The system will notify we via email once the scan is complete, so keep an eye on inbox.
+Assessment time will depend on the size of the submitted project, typically taking a few hours. The system will notify we via email once the assessment is complete, so keep an eye on inbox.
 
 ![]({{'/assets/img/ZastxCodespace/report.png' | relative_url }})
 
-That’s all for the detailed steps on using <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability scanning. We hope this will be helpful for you.
+That’s all for the detailed steps on using <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability assessment. We hope this will be helpful for you.
