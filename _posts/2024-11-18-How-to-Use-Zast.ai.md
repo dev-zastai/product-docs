@@ -10,14 +10,14 @@ There are five steps to finish an assessment on <a href="https://zast.ai" target
 ## Step 1: 
 Give the project a name, choose and upload the Java archive file, then proceed to the next step for connectivity check.
 
-![]({{'/assets/img/ZastxCodespace/upload-jar.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/upload.jpg' | relative_url }})
 
 ## Step 2: 
 Simply enter the URL of the target service url.
 
-![]({{'/assets/img/ZastxCodespace/connectivity.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/check.jpg' | relative_url }})
 
-![]({{'/assets/img/ZastxCodespace/connectivity-check.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/check-ok.jpg' | relative_url }})
 
 ## Step 3: 
 In the ownership verifying phase, follow the detailed instructions to finish adding HTTP challenge source. You can also refer to documentation for more detailed information.
@@ -30,50 +30,36 @@ Then we can proceed to upload the source code.  <a href="https://zast.ai" target
 ![]({{'/assets/img/ZastxCodespace/source-code.jpg' | relative_url }})
 
 ## Step 5: 
-Adding and verifying test accounts, enter the login URL for the test accounts first. 
+Next, we need to use the embedded browser to log in to test accounts. Change the default target service URL in the address bar to the login URL. 
 
-![]({{'/assets/img/ZastxCodespace/login-url.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/browser1.jpg' | relative_url }})
 
-The system will connect to it and provide a snapshot of the page for quick verification. Confirm it and click "Next" to start adding test accounts.
+Log In: Log in to the tests accounts using the login URL.
 
-![]({{'/assets/img/ZastxCodespace/snapshot.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/browser2.jpg' | relative_url }})
 
-In this step, please remember to download the Google extension zast.ai Helper and enable it in incognito mode if it's your first time using <a href="https://zast.ai" target="_blank">zast.ai</a>.
+Verify Login and Choose Role: After a successful login, select the role for the test accounts and then click "verify login" in the action section.
 
-![]({{'/assets/img/ZastxCodespace/verify-account.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/browser3.jpg' | relative_url }})
 
-Once the verification begins, an incognito window will pop up displaying the previously configured page. We will need to log in to the corresponding role account.
+![]({{'/assets/img/ZastxCodespace/browser4.jpg' | relative_url }})
 
-![]({{'/assets/img/ZastxCodespace/incognito.png' | relative_url }})
+Add Account: Once an account is logged in and confirmed (the 'verify login' button will turn green), click "add account" to open a new tab.
 
-![]({{'/assets/img/ZastxCodespace/login-account.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/browser5.jpg' | relative_url }})
 
-Next, open the zast.ai AI Helper extension, click "Save Session," and start verifying the account.
+Repeat Process: Continue entering the address and logging in to the test accounts until all accounts are added.
 
-![]({{'/assets/img/ZastxCodespace/session.png' | relative_url }})
-
-![]({{'/assets/img/ZastxCodespace/session-check.jpg' | relative_url }})
-
-![]({{'/assets/img/ZastxCodespace/session-confirm.jpg' | relative_url }})
-
-When the account verification is complete, return to the zast page, where we will see that the administrator has been successfully added. We can now add new role accounts and repeat the previous steps until all test accounts are added.
-
-![]({{'/assets/img/ZastxCodespace/test-account.png' | relative_url }})
-
-![]({{'/assets/img/ZastxCodespace/add-accounts.jpg' | relative_url }})
-
-After that, the system will ask if there are any other login URLs that need to be added. If we have multiple login URLs to assess, just repeat the above procedure; since we only have one url this time, select "No" and move to the next step.
-
-![]({{'/assets/img/ZastxCodespace/multiple-url.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/browser6.jpg' | relative_url }})
 
 ## Process Completed
 
-The system will then present an overview of this assessment, including the content we submitted. After confirming everything is correct, tick the box for the service terms and privacy policy, and then we can start the assessment!
+The system will present an overview of this assessment, including the content we submitted. After confirming, tick the box for the service terms and privacy policy, and then we can start the assessment!
 
-![]({{'/assets/img/ZastxCodespace/overview.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/assess.jpg' | relative_url }})
 
 Assessment time will depend on the size of the submitted project, typically taking a few hours. The system will notify we via email once the assessment is complete, so keep an eye on inbox.
 
-![]({{'/assets/img/ZastxCodespace/report.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/reports.jpg' | relative_url }})
 
 That’s all for the detailed steps on using <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability assessment. We hope this will be helpful for you.
