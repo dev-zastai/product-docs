@@ -74,7 +74,7 @@ There are five steps: uploading the Java archive file, performing connectivity c
 
 ![]({{'/assets/img/ZastxCodespace/hash.jpg' | relative_url }})
 
-![]({{'/assets/img/ZastxCodespace/zast-txt.png' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/zast-txt.jpg' | relative_url }})
 
 * Then we proceed to upload the source code. Zast.ai does not mandate that the actual source code be uploaded. However, the availability of source code will improve the precision of the assessment result, e.g., the line numbers for each frame of the vulnerability call flows.
 
