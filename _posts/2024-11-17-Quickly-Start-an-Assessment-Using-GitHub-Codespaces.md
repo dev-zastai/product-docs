@@ -5,7 +5,7 @@
 Today, we will demonstrate how to use GitHub Codespaces to build projects online, compile Java archive files, package them into a Java archive file (WAR/JAR), and submit the archive file to <a href="https://zast.ai" target="_blank">zast.ai</a> for vulnerability assessment.
 
 ## Step 1 
-Log in to your GitHub account and locate the corresponding project. Currently, since <a href="https://zast.ai" target="_blank">zast.ai</a> focuses on security vulnerabilities in Java-based web applications, we have prepared a Java web project as an example.
+Log in to your GitHub account and locate the corresponding project. Currently, since <a href="https://zast.ai" target="_blank">zast.ai</a> focuses on security vulnerabilities in Java and Javascript-based web applications, we have prepared a Java web project as an example.
 
 ![]({{'/assets/img/ZastxCodespace/playground.PNG' | relative_url }})
 
@@ -84,7 +84,7 @@ There are five steps: uploading the Java archive file, performing connectivity c
 
 ![]({{'/assets/img/ZastxCodespace/browser1.jpg' | relative_url }})
 
-Log In: Log in to the tests accounts using the login URL.
+Log In: Log in to the test account on the login page.
 
 ![]({{'/assets/img/ZastxCodespace/browser2.jpg' | relative_url }})
 
@@ -105,7 +105,7 @@ Repeat Process: Continue entering the address and logging in to the test account
 
 The system will present an overview of this assessment, including the content we submitted. After confirming, tick the box for the service terms and privacy policy, and then we can start the assessment!
 
-![]({{'/assets/img/ZastxCodespace/assess.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/assess-new.jpg' | relative_url }})
 
 Assessment time depends on the size of the submitted project, typically taking a few hours. The system will notify us via email once the assessment is complete, so keep an eye on inbox.
 
