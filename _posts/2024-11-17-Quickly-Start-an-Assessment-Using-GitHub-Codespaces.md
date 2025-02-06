@@ -120,6 +120,7 @@ That’s all for the detailed steps on using GitHub Codespace to create projects
 Lastly, here’s a little tip: once we receive the vulnerability report from zast.ai, the Codespace service can be wrapped up. Remember to return to the GitHub project page and manually stop and delete this Codespace project in the “Code” section; otherwise, it will keep running, consuming our allotted time.
 
 ![]({{'/assets/img/ZastxCodespace/delete-codespace.png' | relative_url }})
+
 GitHub provides users with 120 hours of free time each month, you can view the specific consumption of Codespace in your Profile -> Settings -> Billing & Plan.
 
 ![]({{'/assets/img/ZastxCodespace/usage-check.png' | relative_url }})
