@@ -15,13 +15,13 @@ Before diving into technical solutions, let's briefly outline the verification p
 
 1. **Generate a Verification String** : When you attempt to scan a website using Zast.ai, a unique, randomly generated string is provided, as illustrated in the screenshot below.
 
-![]({{'/assets/img/OwnerVerification/Fig-1-VerificationString.png' | relative_url }})
+![]({{'/assets/img/OwnerVerification/ownership-verify.jpg' | relative_url }})
 
 2. **Create** **`zast.txt`** : Place this string in a file named `zast.txt`.
 3. **Upload** **`zast.txt`** : This file should be accessible at `[your-domain]/.well-known/zast.txt`. For example, if your website is `https://example.com`, the file should be available at `https://example.com/.well-known/zast.txt`.
 4. **Verify** : Zast.ai checks this URL to confirm ownership. Once ownership verification succeeds, the screenshot illustrated below appears.
 
-![]({{'/assets/img/OwnerVerification/Fig-2-VerificationSuccess.png' | relative_url }})
+![]({{'/assets/img/OwnerVerification/ownership-ok.jpg' | relative_url }})
 
 Let's discuss how you can achieve this on different server setups, starting with the commonly used Nginx reverse proxy.
 
