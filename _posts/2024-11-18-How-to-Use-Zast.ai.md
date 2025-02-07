@@ -34,7 +34,7 @@ Next, we need to use the embedded browser to log in to test accounts. Change the
 
 ![]({{'/assets/img/ZastxCodespace/browser1.jpg' | relative_url }})
 
-Log In: Log in to the tests accounts using the login URL.
+Log In: Log in to the test account on the login page.
 
 ![]({{'/assets/img/ZastxCodespace/browser2.jpg' | relative_url }})
 
@@ -56,7 +56,7 @@ Repeat Process: Continue entering the address and logging in to the test account
 
 The system will present an overview of this assessment, including the content we submitted. After confirming, tick the box for the service terms and privacy policy, and then we can start the assessment!
 
-![]({{'/assets/img/ZastxCodespace/assess.jpg' | relative_url }})
+![]({{'/assets/img/ZastxCodespace/assess-new.jpg' | relative_url }})
 
 Assessment time will depend on the size of the submitted project, typically taking a few hours. The system will notify we via email once the assessment is complete, so keep an eye on inbox.
 
